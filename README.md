@@ -1,15 +1,11 @@
-# Dorm Booking Server (No-SQL JSON storage)
-- Express + LowDB (JSON file) — no SQL required
-- JWT auth with roles (student/admin)
-- Upload slip via `/api/bookings` (multipart/form-data)
-- Admin approves/rejects bookings
+# Dorm Booking Client
+React + Vite + Tailwind. Switch language EN/TH from navbar.
 
 ## Quick start
 ```bash
-cd server
-cp .env.example .env
+cd client
 npm install
 npm run dev
-# Server on http://localhost:4000
+# Open http://localhost:5173
 ```
-Default admin: `admin@example.com` / `admin123`
+The dev server proxies `/api` to `http://localhost:4000`.
