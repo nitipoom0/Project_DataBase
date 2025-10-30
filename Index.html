@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>จองหอพักนิสิต | Halloween Edition</title>
+<meta name="description" content="เว็บจองหอพักนิสิต ธีมฮาโลวีน – สวย ดาร์ค ใช้งานง่าย" />
+
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Creepster&display=swap" rel="stylesheet">
+
+
+<!-- Styles -->
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+<div class="container nav">
+<div class="brand">
+<div class="logo">KU</div>
+<div>
+<div style="font-weight:800">KU Dorms — Halloween Edition</div>
+<small style="color:var(--muted)">จองหอพักนิสิต | เปิดจองช่วง 20–31 ต.ค.</small>
+</div>
+</div>
+<div style="display:flex;gap:10px">
+<a class="btn" href="#rooms">ดูห้องว่าง</a>
+<a class="btn cta" href="#book">จองตอนนี้</a>
+</div>
+</div>
+</header>
+
+
+<section class="hero container">
+<div class="bat" style="top:20px;left:-8vw"></div>
+<div class="bat b2" style="top:80px;left:-14vw"></div>
+<div class="bat b3" style="top:130px;left:-18vw"></div>
+<div class="hero-grid">
+<div>
+<h1 class="headline">คืนที่ <span>Spooky</span> แต่พักสบาย 🎃<br/>โปรฯ ฮาโลวีน ลดสูงสุด 15%</h1>
+<p class="sub">เลือกหอพักนิสิต ห้องเดี่ยว/พักคู่ มีเครื่องปรับอากาศ Wi‑Fi และระบบเข้าออกด้วยบัตร ทุกการจองบันทึกไว้ในเครื่องคุณ (LocalStorage) ใช้งานได้ทันทีโดยไม่ต้องมีเซิร์ฟเวอร์</p>
+<div class="badges">
+<span class="badge">🔐 ชำระเงินหน้าหอ</span>
+<span class="badge">🧹 ทำความสะอาดรายสัปดาห์</span>
+<span class="badge">🕸️ ธีมพิเศษเฉพาะ ต.ค.</span>
+</div>
+<div class="hero-card">
+<div class="help">Tips: ใช้โค้ด <b>BOO15</b> ในหน้าจองเพื่อรับส่วนลด 15% (เฉพาะ 20–31 ตุลาคม)</div>
+<div class="help">ระบบตัวอย่างนี้จำลองการจองและเช็คห้องว่างด้วย JavaScript + LocalStorage</div>
+</div>
+</div>
+<div class="panel">
+<h3 style="margin:6px 0 12px">ค้นหาห้องว่างด่วน</h3>
+<div class="toolbar">
+<label style="flex:1 1 180px">วันที่เช็คอิน
+<input type="date" id="qCheckIn">
+</label>
+<label style="flex:1 1 180px">วันที่เช็คเอาต์
+<input type="date" id="qCheckOut">
+</label>
+<label style="flex:1 1 160px">ประเภทห้อง
+<select id="qType">
+<option value="">ทั้งหมด</option>
+<option value="single">ห้องเดี่ยว</option>
+<option value="double">ห้องพักคู่</option>
+</select>
+</label>
+<label style="flex:1 1 140px">งบประมาณ/คืน (สูงสุด)
+<input type="number" id="qBudget" placeholder="เช่น 900">
+</label>
+<button class="btn primary" id="btnQuickSearch">ค้นหา</button>
+</div>
+<div class="help" id="quickResult"></div>
+</div>
+</div>
+</section>
+
+
+<section id="rooms" class="container section">
+<h2>ห้องที่แนะนำ</h2>
+<div class="rooms" id="roomGrid"></div>
+```
